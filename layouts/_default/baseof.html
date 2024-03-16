@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        {{ block "title" . }}
+            {{ .Site.Title }}
+        {{ end }}
+    </title>
+</head>
+<body>
+<!-- Code that all your templates share, like a header -->
+<header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/posts">Posts</a>
+    </nav>
+</header>
+
+<main>
+{{ block "main" . }}
+<!-- The part of the page that begins to differ between templates -->
+{{ end }}
+</main>
+
+<footer>
+    <p>&copy; {{ time.Now.Year }} {{ .Site.Params.Author }}.</p>
+</footer>
+</body>
+</html>
