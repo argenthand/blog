@@ -1,3 +1,5 @@
 baseURL = 'https://thesilverhand.blog/'
 languageCode = 'en-us'
-title = 'Bhargav Shukla - Fullstack Engineer'
+title = 'Bhargav Shukla'
+[params]
+    author = 'Bhargav Shukla'
